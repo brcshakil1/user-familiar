@@ -10,7 +10,6 @@ const User = (props) => {
         greeting = <p>Who are you?</p>;
     }
 
-    let food = (familiar ? <p>I'll buy food</p> : <p>Let's eat his his whose whose</p>);
     return (
         <div>
             <div>
@@ -20,7 +19,7 @@ const User = (props) => {
             <div>
                 <h3>Food</h3>
                 {
-                    food
+                    familiar ? <p>I'll buy food</p> : <p>Let's eat his his whose whose</p>
                 }
                 
                 
